@@ -16,13 +16,14 @@ This Python script performs keyword searches on a specified domain and stores th
    ```
 3. Enable the Google Sheets API and obtain the service account JSON file. Instructions can be found in the [Google Sheets API documentation](https://developers.google.com/sheets/api/quickstart/python).
 4. Place the service account JSON file in the same directory as the script.
+5. Share the Google Sheets document with the email address provided inside the service account JSON file. This is usually under the key `client_email`. Ensure that the appropriate permissions are granted (typically edit access) to the shared document.
 
 ### Usage
 1. Run the script in your terminal or command prompt:
    ```
    python internal_linking.py
    ```
-2. Enter the domain, number of URLs, and file name when prompted.
+2. Enter the domain, number of URLs, file name, and the name of the service account JSON file when prompted.
 3. The script will perform keyword searches on the specified domain, fetch URLs, and update a new worksheet in the specified Google Sheets spreadsheet.
 
 ### Notes
