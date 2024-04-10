@@ -19,14 +19,14 @@ def search(query, api_key, cse_id, **kwargs):
 site = input("Enter the your domain: ")
 
 # Google API key and Custom Search Engine ID
-api_key = "AIzaSyAldBNS7Jy7oFNkMmy0HdSjGo6Qz0Yy0kI"
-cse_id = "d26e2f100f39f43c1"
+api_key = "Your Api Key"
+cse_id = "Your CSE ID"
 
 n = int(input("Enter Number of URLS: "))
 
 # Google Sheets credentials
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-credentials = ServiceAccountCredentials.from_json_keyfile_name('internal-linking-406006-79de3fe050f5.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('YOUR JSON FILE NAME', scope)
 gc = gspread.authorize(credentials)
 
 worksheet_title = input("Enter File Name: ")
